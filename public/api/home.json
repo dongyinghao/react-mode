@@ -1,0 +1,144 @@
+{
+  "code": "0",
+  "msg": "success",
+  "data": {
+    "articleList": [
+      {
+        "id": 1,
+        "title": "疫情赋闲，让老公变了",
+        "content": "昨天晚上快10点了，忽然发现微信一条信息，点开一看，是老公发来的，就俩字：媳妇。我有点意外，老公从来没这样叫过我，今天这是怎么啦？我忙问：这是什...",
+        "nickname": "小小蜱虫",
+        "commentNum": 28,
+        "likeNum": 541,
+        "diamontNum": 76.8
+      },
+      {
+        "id": 2,
+        "title": "上班第一天",
+        "content": "年前买了40个口罩觉得很多，过年才发现家人都没买上，于是给婆婆10个，爸妈10个，弟弟家10个，女儿抱怨：都送人了咱家没了！我安慰她咱再买！ 今...",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 3,
+        "title": "纯洁的男女关系",
+        "content": "深夜，一对年轻男女来到一家宾馆。 “开两个单间！”男的拿着身份证说。 “不好意思，现在房间住满了，只剩一个标准间了。”前台小姐说。 男的看了一眼....",
+        "img": "https://upload.jianshu.io/users/upload_avatars/2558050/7761b285-2805-4534-9870-ba7dcc7538ec.jpg",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 4,
+        "title": "这个假期有点闷",
+        "content": "小美今年16岁，寒假去哥哥家，没想到赶上了疫情，到现在住了有两个月了。 哥嫂结婚一年，由于经常在学校与嫂子不是很熟。小美说刚住来时嫂子还好，跟她...",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 5,
+        "title": "细读《挪威的森林》",
+        "content": "《挪威的森林》，村上春树的代表作。因它的名气特别响亮，特定网购了一本，放在书架上放好几个月了，最近才有时间打开阅读。 花了六天时间读完，基本上是...",
+        "img": "https://upload.jianshu.io/users/upload_avatars/5796592/73837104-47e5-4fe9-a5be-054bd50b06f7.jpg",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 6,
+        "title": "疫情赋闲，让老公变了",
+        "content": "昨天晚上快10点了，忽然发现微信一条信息，点开一看，是老公发来的，就俩字：媳妇。我有点意外，老公从来没这样叫过我，今天这是怎么啦？我忙问：这是什...",
+        "nickname": "小小蜱虫",
+        "commentNum": 28,
+        "likeNum": 541,
+        "diamontNum": 76.8
+      },
+      {
+        "id": 7,
+        "title": "上班第一天",
+        "content": "年前买了40个口罩觉得很多，过年才发现家人都没买上，于是给婆婆10个，爸妈10个，弟弟家10个，女儿抱怨：都送人了咱家没了！我安慰她咱再买！ 今...",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 8,
+        "title": "纯洁的男女关系",
+        "content": "深夜，一对年轻男女来到一家宾馆。 “开两个单间！”男的拿着身份证说。 “不好意思，现在房间住满了，只剩一个标准间了。”前台小姐说。 男的看了一眼....",
+        "img": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 9,
+        "title": "这个假期有点闷",
+        "content": "小美今年16岁，寒假去哥哥家，没想到赶上了疫情，到现在住了有两个月了。 哥嫂结婚一年，由于经常在学校与嫂子不是很熟。小美说刚住来时嫂子还好，跟她...",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 10,
+        "title": "细读《挪威的森林》",
+        "content": "《挪威的森林》，村上春树的代表作。因它的名气特别响亮，特定网购了一本，放在书架上放好几个月了，最近才有时间打开阅读。 花了六天时间读完，基本上是...",
+        "img": "https://upload.jianshu.io/users/upload_avatars/7290998/f64f5ef0-def0-4b26-beb3-b9d88f060ba0.jpg",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 11,
+        "title": "心理学：往往能让男人上瘾的，是那些“低投入”的女人",
+        "content": "金星老师在节目中曾经说过这样一段话：“尽力去爱一个人，是不会有好下场的。在爱情中，如果你的底牌被看穿，你的优点会被无限缩小而缺点会被无限放大，对...",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      },
+      {
+        "id": 12,
+        "title": "细读《挪威的森林》",
+        "content": "《挪威的森林》，村上春树的代表作。因它的名气特别响亮，特定网购了一本，放在书架上放好几个月了，最近才有时间打开阅读。 花了六天时间读完，基本上是...",
+        "img": "https://upload.jianshu.io/users/upload_avatars/8357505/45ea8a01-4047-4f0d-9371-47cbd26797d2.jpg",
+        "nickname": "大点的蜱虫",
+        "commentNum": 28,
+        "likeNum": 63,
+        "diamontNum": 28.3
+      }
+    ],
+    "recommendList": [
+      {
+        "id": 1,
+        "userUrl": "https://upload.jianshu.io/users/upload_avatars/5796592/73837104-47e5-4fe9-a5be-054bd50b06f7.jpg",
+        "nickname": "小小蜱虫",
+        "textNum": "52k",
+        "likeNum": "2.1k"
+      },
+      {
+        "id": 2,
+        "userUrl": "https://upload.jianshu.io/users/upload_avatars/2558050/7761b285-2805-4534-9870-ba7dcc7538ec.jpg",
+        "nickname": "大点的蜱虫",
+        "textNum": "9712.6k",
+        "likeNum": 541
+      },
+      {
+        "id": 3,
+        "userUrl": "https://upload.jianshu.io/users/upload_avatars/7290998/f64f5ef0-def0-4b26-beb3-b9d88f060ba0.jpg",
+        "nickname": "老蜱虫",
+        "textNum": "714k",
+        "likeNum": 51
+      }
+    ]
+  }
+}
