@@ -24,9 +24,9 @@ class Register extends React.Component{
 
   render() {
     return (
-      <div className="bg-e h-p-100 flex ai-c p-r">
-        <Link to='/' className="p-a l-80 t-40"><img src="/assets/img/nav-logo.png" alt=""/></Link>
-        <div className="w-360 m-h-a form bg-f p-h-30 p-v-40">
+      <div className="bg-e h-p-100 flex ai-c relative">
+        <Link to='/' className="absolute l-80 t-40"><img src="/assets/img/nav-logo.png" alt=""/></Link>
+        <div className="w-360 m-h-auto form bg-f p-h-30 p-v-40">
           <div className="t-c fs-22 c-9">
             <NavLink className="c-9" to='/login' activeClassName='c-red'>登录 </NavLink>
             <span>|</span>

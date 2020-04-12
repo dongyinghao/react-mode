@@ -1,20 +1,20 @@
 import { fromJS } from 'immutable'
-import * as contants from './constants'
+import { constants } from './index'
 
 const defaultState = fromJS({
-  login: false
+  token: ''
 });
 
 export default (state=defaultState, action) => {
   switch (action.type) {
-    case contants.LOGIN:
+    case constants.LOGIN:
       return state.merge({
-        login: true
+        token: action.token
       });
-    case contants.LOGOUT:
+    case constants.LOGOUT:
       localStorage.clear();
       return state.merge({
-        login: false
+        token: ''
       });
     default:
       return state

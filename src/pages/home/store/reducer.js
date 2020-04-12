@@ -1,5 +1,5 @@
 import { fromJS } from 'immutable'
-import * as contants from './constants'
+import { constants } from './index'
 
 const defaultState = fromJS({
   articleList: [],
@@ -8,7 +8,7 @@ const defaultState = fromJS({
 
 export default (state=defaultState, action) => {
   switch (action.type) {
-    case contants.DATAINIT:
+    case constants.DATAINIT:
       return state.merge({
         articleList: fromJS(action.articleList),
         recommendList: fromJS(action.recommendList)

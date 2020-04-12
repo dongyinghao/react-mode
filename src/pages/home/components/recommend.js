@@ -23,7 +23,7 @@ class Recommend extends React.Component {
         <div className="flex jc-b c-9 fs-15 m-v-20">
           <span>推荐作者</span>
           <span className='pointer' onClick={this.changeBatch.bind(this)}>
-            <i ref={(batch) => {this.batch = batch}} style={{transform: 'rotate('+ this.state.rotate +'deg)'}} className='iconfont d-ib fs-14 m-r-6 linear'>&#xe6e1;</i>
+            <i ref={(batch) => {this.batch = batch}} style={{transform: 'rotate('+ this.state.rotate +'deg)'}} className='iconfont inline-block fs-14 m-r-6 linear'>&#xe6e1;</i>
             换一批
           </span>
         </div>

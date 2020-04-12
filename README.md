@@ -1,17 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### todo
-1、搜索页编写<br />
+1、组件统一管理<br />
 2、全局loading<br />
-3、路由拦截(登录后带参数跳转到目标页面)<br />
-4、交互动画<br />
-5、推送到git<br />
-6、工具方法封装<br />
-7、引入scss<br />
+3、推送到git<br />
+4、引入存储加密<br />
+5、引入操作确认框<br />
+6、路由动画<br />
+7、引入富文本编辑器<br />
 8、引入lodash<br />
-9、组件统一管理<br />
-10、路由动画<br />
-11、引入操作确认框<br />
 
 ## Available Scripts
 

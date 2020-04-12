@@ -1,4 +1,4 @@
-import * as constants from './constants'
+import { constants } from './index'
 import apis from '../../../utils/request/apis'
 
 export const init = () => {

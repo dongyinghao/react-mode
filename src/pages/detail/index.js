@@ -2,14 +2,25 @@ import React from 'react'
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { DetailWrap } from "./style"
 
 class Detail extends React.Component {
   render () {
     return (
-      <div className='bg-e p-b-20 p-t-72'>
-        <DetailWrap className='f-auto m-h-a flex jc-b p-t-10'>
-          <div className='main o-h bg-f p-h-16 bs-bb p-v-30'>
+      <div className='f-auto bg-e p-b-20 p-t-72'>
+        <div className='m-h-auto flex jc-b p-t-10 w-960'>
+          <div className='fixed w-960 h-0 m-h-auto'>
+            <div className='absolute l--60 t-c c-9 fs-14 t-140'>
+              <div className='wh-48 br-p-50 bg-f lh-48 pointer h-c-3'>
+                <i className='iconfont iconzan fs-18'/>
+              </div>
+              <p className='m-t-6'>28</p>
+              <div className='wh-48 lh-48 br-p-50 bg-f m-t-10 pointer h-c-3'>
+                <i className='iconfont iconreward fs-30'/>
+              </div>
+              <p className='m-t-6'>赞赏</p>
+            </div>
+          </div>
+          <div className='w-p-66 hidden bg-f p-h-16 border-box p-v-30'>
             <h3 className='fs-30'>纯洁的男女关系</h3>
             <div className='flex ai-c m-t-16'>
               <img className='br-p-50 wh-48' src="https://upload.jianshu.io/users/upload_avatars/10232737/d8ae0091-ebb2-44af-8e26-2deaea4765d2.jpg" alt=""/>
@@ -43,14 +54,14 @@ class Detail extends React.Component {
             </div>
             <div className='flex jc-b c-9 fs-14 m-t-30'>
               <div className='flex ai-c'>
-                <span className='wh-32 b-c br-p-50 flex ai-c jc-c m-r-10'><i className='iconfont fs-16'>&#xe620;</i></span>
+                <span className='wh-32 b-c br-p-50 flex ai-c jc-c m-r-10 pointer'><i className='iconfont fs-16 iconzan' /></span>
                 人点赞 >
-                <span className='m-l-10 wh-32 b-c br-p-50 flex ai-c jc-c'><i className='iconfont fs-16'>&#xe68f;</i></span>
+                <span className='m-l-10 wh-32 b-c br-p-50 flex ai-c jc-c pointer'><i className='iconfont fs-16 iconcai' /></span>
               </div>
-              <div className='flex ai-c'><i className='iconfont m-r-10 va-3'>&#xe711;</i> 自嗨 <span className='m-l-10 b-c flex ai-c jc-c wh-32 br-p-50'>...</span></div>
+              <div className='flex ai-c'><i className='iconfont m-r-10 va-3 pointer iconnote' /> 自嗨 <i className='iconfont iconomit m-l-10 b-c t-c fs-14 wh-32 br-p-50 pointer lh-32'/></div>
             </div>
           </div>
-          <div className='aside'>
+          <div className='w-p-32'>
             <div className='bg-f p-16'>
               <div className='flex ai-c b-b-e p-b-10'>
                 <img className='br-p-50 wh-48' src="https://upload.jianshu.io/users/upload_avatars/10232737/d8ae0091-ebb2-44af-8e26-2deaea4765d2.jpg" alt=""/>
@@ -99,7 +110,7 @@ class Detail extends React.Component {
               </div>
             </div>
           </div>
-        </DetailWrap>
+        </div>
       </div>
     )
   }

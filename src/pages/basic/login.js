@@ -35,8 +35,9 @@ class Login extends React.Component{
       this.setState({disabled: false});
       if (res.code === '0') {
         localStorage.setItem('token', res.data.token);
-        this.props.loginHandle();
-        this.props.history.push({pathname:"/chinaexpressair", query:{ test: "test" }})
+        this.props.loginHandle(res.data.token);
+        const fromPath = this.props.location.state && this.props.location.state.from;
+        this.props.history.push({pathname: fromPath || "/chinaexpressair", query:{ test: "test" }})
       }
     }).catch(error => {
       this.setState({disabled: false});
@@ -47,22 +48,22 @@ class Login extends React.Component{
   render () {
     const { user, password, disabled } = this.state;
     return (
-      this.props.login ?
+      this.props.token ?
       <Redirect to='/chinaexpressair' />  :
-      <div className="flex ai-c bg-e h-p-100 p-r">
-        <Link to='/' className="p-a l-80 t-40"><img src="/assets/img/nav-logo.png" alt=""/></Link>
-        <div className="w-360 m-h-a form bg-f p-h-30 p-v-40">
+      <div className="flex ai-c bg-e h-p-100 relative">
+        <Link to='/' className="absolute l-80 t-40"><img src="/assets/img/nav-logo.png" alt=""/></Link>
+        <div className="w-360 m-h-auto form bg-f p-h-30 p-v-40">
           <div className="t-c fs-22 c-9">
             <NavLink className="c-9" to='/login' activeClassName='c-red'>登录</NavLink>
             <span> | </span>
             <NavLink className="c-9" to='/register' activeClassName='c-red'>注册</NavLink>
           </div>
           <div className="form-item">
-            <i className='iconfont'>&#xe602;</i>
+            <i className='iconfont iconuser'/>
             <input onChange={this.changeHandle.bind(this, 'user')} type="text" value={user} placeholder='手机号或邮箱'/>
           </div>
           <div className="form-item">
-            <i className='iconfont'>&#xe60d;</i>
+            <i className='iconfont iconpwd'/>
             <input onChange={this.changeHandle.bind(this, 'password')} type="password" value={password} placeholder='密码'/>
           </div>
           <button
@@ -80,16 +81,16 @@ class Login extends React.Component{
 }
 const stateMap = (state) => {
   return {
-    login: state.getIn(['login', 'login'])
+    token: state.getIn(['basic', 'token'])
   }
 };
 
 const dispatchMap = (dispatch) => {
   return {
-    loginHandle () {
-      dispatch(actionCreator.login())
+    loginHandle (value) {
+      dispatch(actionCreator.login(value))
     }
   }
-}
+};
 
 export default connect(stateMap, dispatchMap)(Login)

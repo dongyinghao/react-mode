@@ -1,0 +1,289 @@
+// 样式初始化
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,	b, u, i, center,
+dl, dt, dd, ol, ul, li,	fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time,
+mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+input, button {font-size: inherit;outline: none;border: 0}
+a {text-decoration: none;color: #333;}
+html,body,#root {height: 100%;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+.b {border: 1px solid red}
+
+//颜色变量
+$green: #42c02e;
+$red: #ea6f5a;
+$blue: #3194d0;
+
+// 字体色
+.c-f {color: #fff}
+.c-3 {color: #333}
+.c-6 {color: #666}
+.c-9 {color: #999}
+.c-b {color: #bbb}
+.c-d {color: #ddd}
+.c-red {color: $red}
+.c-green {color: $green}
+.c-blue {color: $blue}
+
+// 背景色
+.bg-f {background-color: #fff}
+.bg-e {background-color: #eee}
+.bg-c {background-color: #ccc}
+.bg-a {background-color: #aaa}
+.bg-red {background-color: $red}
+.bg-blue {background-color: $blue}
+.bg-green {background-color: $green}
+
+// 字号
+$fs-list: 68 30 22 20 18 16 15 14 13 12 10;
+@each $key in $fs-list { .fs-#{$key} {font-size: #{$key}px} }
+
+// 外间距-垂直
+.m-v-auto {margin-bottom: auto;margin-top: auto;}
+$m-v-list: 20 10;
+@each $key in $m-v-list { .m-v-#{$key} {margin-top: #{$key}px; margin-bottom: #{$key}px} }
+
+// 外间距-水平
+.m-h-auto {margin-left: auto;margin-right: auto;}
+$m-h-list: 30;
+@each $key in $m-h-list { .m-h-#{$key} {margin-left: #{$key}px; margin-right: #{$key}px} }
+
+// 外间距-上
+$m-t-list: 80 60 40 30 20 16 10 6 2 -40;
+@each $key in $m-t-list { .m-t-#{$key} {margin-top: #{$key}px} }
+
+// 外间距-下
+$m-b-list: 20 10;
+@each $key in $m-b-list { .m-b-#{$key} {margin-bottom: #{$key}px} }
+
+// 外间距-左
+$m-l-list: 20 10;
+@each $key in $m-l-list { .m-l-#{$key} {margin-left: #{$key}px} }
+
+// 外间距-右
+$m-r-list: 30 20 10 6;
+@each $key in $m-r-list { .m-r-#{$key} {margin-right: #{$key}px} }
+
+// 内间距
+$p-list: 30 20 16 10 4;
+@each $key in $p-list { .p-#{$key} {padding: #{$key}px;} }
+
+// 内间距-垂直
+$p-v-list: 40 30 20 10 6 2;
+@each $key in $p-v-list { .p-v-#{$key} {padding-top: #{$key}px; padding-bottom: #{$key}px} }
+
+// 内间距-水平
+$p-h-list: 40 30 20 16 12 8;
+@each $key in $p-h-list { .p-h-#{$key} {padding-left: #{$key}px; padding-right: #{$key}px} }
+
+// 内间距-上
+$p-t-list: 200 92 72 30 20 10 2;
+@each $key in $p-t-list { .p-t-#{$key} {padding-top: #{$key}px} }
+
+// 内间距-下
+$p-b-list: 30 20 10;
+@each $key in $p-b-list { .p-b-#{$key} {padding-bottom: #{$key}px} }
+
+// 内间距-左
+$p-l-list: 16 6 2;
+@each $key in $p-l-list { .p-l-#{$key} {padding-left: #{$key}px} }
+
+// 内间距-右
+$p-r-list: 40 20;
+@each $key in $p-r-list { .p-r-#{$key} {padding-right: #{$key}px} }
+
+// 定位和距离
+.t-140 {top: 140px}
+.t-40 {top: 40px}
+.t-28 {top: 28px}
+.t-0 {top: 0}
+.r-100 {right: 100px}
+.r-10 {right: 10px}
+.r-0 {right: 0}
+.b-100 {bottom: 100px}
+.b-0 {bottom: 0}
+.l-80 {left: 80px}
+.l--60 {left: -60px}
+.l-2 {left: 2px}
+.l-0 {left: 0}
+.v-0 {top: 0;bottom: 0;}
+.h-0 {right: 0;left: 0;}
+.a-0 {top: 0;bottom: 0;left: 0;right: 0;}
+
+// 圆角
+.br-p-50 {border-radius: 50%}
+$br-list: 40 24 20 15 6;
+@each $key in $br-list { .br-#{$key} {border-radius: #{$key}px} }
+
+// 边框
+.b-none {border: 0;}
+.b-b-e {border-bottom: 1px solid #eee;}
+.b-b-2-3 {border-bottom: 2px solid #333;}
+.b-t-e {border-top: 1px solid #eee;}
+.b-t-d {border-top: 1px solid #ddd;}
+.b-l-4-red {border-left: 4px solid $red;}
+.b-r-e {border-right: 1px solid #eee;}
+.b-e {border: 1px solid #eee;}
+.b-c {border: 1px solid #ccc;}
+.b-red {border: 1px solid $red;}
+.b-green {border: 1px solid $green;}
+
+// 行高
+.lh-n {line-height: normal;}
+$lh-list: 100 48 40 32 26 24;
+@each $key in $lh-list { .lh-#{$key} {line-height: #{$key}px} }
+
+$lh-p-list: 240 180 140 100;
+@each $key in $lh-p-list { .lh-p-#{$key} {line-height: #{$key / 100}} }
+
+// 宽高度
+.h-p-100 {height: 100%}
+.h-100 {height: 100px}
+.w-p-100 {width: 100%}
+.w-p-66 {width: 66%}
+.w-p-32 {width: 32%}
+.h-p-100 {height: 100%}
+.wh-p-100 {height: 100%;width: 100%;}
+
+// 宽高
+$wh-list: 80 60 48 32 26 22;
+@each $key in $wh-list { .wh-#{$key} {width: #{$key}px;height: #{$key}px} }
+
+// 宽度
+$w-list: 960 360 300 240 200 150 140 100 86;
+@each $key in $w-list { .w-#{$key} {width: #{$key}px} }
+
+// 高度
+$h-list: 56 44 40 30;
+@each $key in $h-list { .h-#{$key} {height: #{$key}px} }
+
+// 对齐
+.t-c {text-align: center;}
+.t-l {text-align: left;}
+.t-r {text-align: right;}
+.f-l {float: left}
+.f-r {float: right}
+
+// 垂直对齐
+$va-list: -7 -5 -3 -2;
+@each $key in $va-list { .va#{$key} {vertical-align: #{$key}px} }
+.va-m {vertical-align: middle;}
+
+// 弹性布局
+.flex {display: flex}
+.fw-w {flex-wrap: wrap}
+.fd-c {flex-direction: column}
+.f-auto {flex: auto}
+.f-none {flex: none}
+.jc-c {justify-content: center}
+.jc-b {justify-content: space-between}
+.jc-a {justify-content: space-around}
+.ai-c {align-items: center}
+
+// 语义化常用属性
+.bold {font-weight: bold}
+.deg180 {transform: rotate(180deg)}
+.transition {transition: all 0.2s linear;}
+.block {display: block}
+.inline-block {display: inline-block}
+.inline {display: inline}
+.border-box {box-sizing: border-box}
+.relative {position: relative}
+.absolute {position: absolute}
+.fixed {position: fixed}
+.pointer {cursor: pointer}
+.hide {display: none}
+.hidden {overflow: hidden}
+.nowrap {white-space: nowrap;}
+.linear {transition: all 0.2s linear}
+.pointer {cursor: pointer}
+.shadow {box-shadow: 0 0 4px 0 #878787;}
+
+// hover
+.h-b:hover{text-decoration: underline;transition: all 0.2s linear;}
+.h-bg-e:hover{background-color: #eee;transition: all 0.2s linear;cursor: pointer;}
+.h-c-3:hover{color: #333;transition: all 0.2s linear;cursor: pointer;}
+
+// 组件样式
+button[disabled] {background-color: #ddd;cursor: not-allowed;}
+
+.form { // 表单
+  .form-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    i {
+      flex: none;
+      display: inline-block;
+      color: #999;
+      margin-right: 6px;
+    }
+    input {
+      flex: auto;
+      background-color: transparent;
+      height: 40px;
+      width: 100%;
+    }
+  }
+  .form-submit {
+    margin-top: 30px;
+    border-radius: 8px;
+    width: 100%;
+    height: 48px;
+    color: #fff;
+  }
+}
+
+// 动画
+.fade-enter, .fade-appear {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+.fade-enter-active, .fade-appear-active {
+  opacity: 1;
+}
+.fade-enter-done {
+  opacity: 1;
+}
+.fade-exit {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-exit-done {
+  opacity: 0;
+}
+// 动画
+.slideLeft-enter, .fade-appear {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+}
+.slideLeft-enter-active, .slideLeft-appear-active {
+  opacity: 1;
+}
+.slideLeft-enter-done {
+  opacity: 1;
+}
+.slideLeft-exit {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+  transform: translateX(0);
+}
+.slideLeft-exit-active {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+.slideLeft-exit-done {
+  opacity: 0;
+  transform: translateX(-200px);
+}

@@ -1,7 +1,8 @@
-import * as constants from './constants'
+import { constants } from './index'
 
-export const login = () => ({
-  type: constants.LOGIN
+export const login = (token) => ({
+  type: constants.LOGIN,
+  token
 });
 
 export const logout = () => ({

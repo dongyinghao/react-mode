@@ -3,28 +3,24 @@ import { connect } from 'react-redux'
 import { actionCreator } from './store'
 import { IndexWrap } from "./style"
 import BackTop from '../../components/backTop'
-import Article from './components/article'
-import Recommend from "./components/recommend";
-import toast from "../../utils/toast";
+import Article from './components/article.js'
+import Recommend from "./components/recommend.js";
+// import toast from "../../utils/toast";
 
 class Home extends React.Component {
-  test () {
-    toast.show()
-  }
   render () {
     return (
-      <IndexWrap className='f-auto m-h-a p-t-92'>
+      <IndexWrap className='f-auto m-h-auto p-t-92'>
         <BackTop />
-        <div className='main o-h f-l'>
+        <div className='main hidden f-l'>
           <div className="banner">
             <img className='w-p-100 br-6'
                  src='https://upload.jianshu.io/admin_banners/web_images/4894/23ecc55accf5c6a6c9910be966c125853d1f04a5.png'
                  alt="banner"/>
-            <button style={{margin: '10px 0'}} onClick={this.test}>测试按钮</button>
           </div>
           <Article />
         </div>
-        <div className='aside o-h f-l'>
+        <div className='aside hidden f-l'>
           <div><img className='w-p-100' src='/assets/img/nav-img-1.png' alt=""/></div>
           <div><img className='w-p-100 m-t-6' src='/assets/img/nav-img-2.png' alt=""/></div>
           <div><img className='w-p-100 m-t-6' src='/assets/img/nav-img-3.png' alt=""/></div>
