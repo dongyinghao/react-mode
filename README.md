@@ -3,12 +3,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### todo
 1、组件统一管理<br />
 2、全局loading<br />
-3、推送到git<br />
+3、引入lodash<br />
 4、引入存储加密<br />
 5、引入操作确认框<br />
 6、路由动画<br />
 7、引入富文本编辑器<br />
-8、引入lodash<br />
 
 ## Available Scripts
 
