@@ -11,10 +11,14 @@ import Search from './pages/search/loadable'
 import Detail from './pages/detail/loadable'
 import Write from './pages/write/loadable'
 import User from './pages/user/loadable'
+import Focus from './pages/focus/loadable'
+import News from './pages/news/loadable'
 
 class App extends React.Component {
+
+  routeTest = (c, from) => this.props.token ? c : <Redirect to={{pathname: '/login', state: {from}}} />;
+
   render() {
-    const { token } = this.props;
     return (
       <div className="App h-p-100">
         <div className='flex fd-c h-p-100'>
@@ -22,9 +26,7 @@ class App extends React.Component {
             <Switch>
               <Route path='/register' exact component={ Register }/>
               <Route path='/login' exact component={ Login }/>
-              <Route path='/write' exact render={
-                () => token ? <Write /> : <Redirect to={{pathname: '/login', state: {from: '/write'}}} />
-              }/>
+              <Route path='/write' exact render={() => this.routeTest(<Write/>, '/write')}/>
               <Route path='/chinaexpressair' render={() => (
                 <Layout>
                   <Route path='/chinaexpressair' exact component={ Home }/>
@@ -32,6 +34,8 @@ class App extends React.Component {
                   <Route path='/chinaexpressair/author' exact component={ Author }/>
                   <Route path='/chinaexpressair/search' exact component={ Search }/>
                   <Route path='/chinaexpressair/user/:id' exact component={ User }/>
+                  <Route path='/chinaexpressair/focus' exact component={ Focus }/>
+                  <Route path='/chinaexpressair/news' exact component={ News }/>
                 </Layout>
               )}/>
               <Redirect from="/" exact to="/chinaexpressair" />

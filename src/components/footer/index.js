@@ -6,7 +6,7 @@ import { withRouter  } from 'react-router-dom';
 class Footer extends React.Component {
   test () {
     return (
-      <FooterWrap className='t-c b-t-e'>
+      <FooterWrap className='ta-c b-t-e'>
         <Link to=''>关于简书</Link>
         <Link to=''>联系我们</Link>
         <Link to=''>加入我们</Link>

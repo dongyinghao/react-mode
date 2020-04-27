@@ -14,9 +14,7 @@ class Home extends React.Component {
         <BackTop />
         <div className='main hidden f-l'>
           <div className="banner">
-            <img className='w-p-100 br-6'
-                 src='https://upload.jianshu.io/admin_banners/web_images/4894/23ecc55accf5c6a6c9910be966c125853d1f04a5.png'
-                 alt="banner"/>
+            <img className='w-p-100 br-6' src='https://upload.jianshu.io/admin_banners/web_images/4933/4569c554a279c00bee30ee4ed42fc454db7cce1b.jpg' alt="banner"/>
           </div>
           <Article />
         </div>

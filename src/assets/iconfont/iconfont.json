@@ -6,6 +6,55 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "12705686",
+      "name": "上传",
+      "font_class": "update",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "1071050",
+      "name": "评论1",
+      "font_class": "suggest",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "10715429",
+      "name": "钱",
+      "font_class": "qian",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "11459713",
+      "name": "勾",
+      "font_class": "finish",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "2471362",
+      "name": "徽章",
+      "font_class": "badge",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "8349128",
+      "name": "添加用户-填充",
+      "font_class": "addUser",
+      "unicode": "e735",
+      "unicode_decimal": 59189
+    },
+    {
+      "icon_id": "8349139",
+      "name": "下箭头-填充",
+      "font_class": "down-fill",
+      "unicode": "e73a",
+      "unicode_decimal": 59194
+    },
+    {
       "icon_id": "322915",
       "name": "search",
       "font_class": "search",

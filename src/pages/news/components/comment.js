@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-class SearchType extends React.Component {
+class Comment extends React.Component {
 
   render () {
     const { typeChangeHandle, currentType } = this.props;
@@ -24,4 +24,4 @@ class SearchType extends React.Component {
   }
 }
 
-export default connect(null,null)(SearchType)
+export default connect(null,null)(Comment)

@@ -27,7 +27,7 @@ class Register extends React.Component{
       <div className="bg-e h-p-100 flex ai-c relative">
         <Link to='/' className="absolute l-80 t-40"><img src="/assets/img/nav-logo.png" alt=""/></Link>
         <div className="w-360 m-h-auto form bg-f p-h-30 p-v-40">
-          <div className="t-c fs-22 c-9">
+          <div className="ta-c fs-22 c-9">
             <NavLink className="c-9" to='/login' activeClassName='c-red'>登录 </NavLink>
             <span>|</span>
             <NavLink className="c-9" to='/register' activeClassName='c-red'> 注册</NavLink>
@@ -45,7 +45,7 @@ class Register extends React.Component{
             <input onChange={(e) => {this.changeHandle('password', e)}} value={this.state.password} type="password" placeholder='设置密码'/>
           </div>
           <button onClick={this.submit} className='form-submit bg-green br-24'>注册</button>
-          <div className="m-t-16 fs-14 t-c p-h-40 c-9 lh-p-140">点击 “注册” 即表示您同意并愿意遵守简书 用户协议 和 隐私政策</div>
+          <div className="m-t-16 fs-14 ta-c p-h-40 c-9 lh-p-140">点击 “注册” 即表示您同意并愿意遵守简书 用户协议 和 隐私政策</div>
         </div>
       </div>
     )

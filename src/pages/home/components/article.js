@@ -27,7 +27,7 @@ class Article extends React.Component {
             )
           })
         }
-        <div className='pointer bg-c p-v-10 t-c br-20 c-f'>阅读更多</div>
+        <div className='pointer bg-c p-v-10 ta-c br-20 c-f'>阅读更多</div>
       </div>
     )
   }

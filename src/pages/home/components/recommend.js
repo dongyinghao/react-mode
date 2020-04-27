@@ -40,7 +40,7 @@ class Recommend extends React.Component {
             )
           })
         }
-        <div className='bg-e br-6 b-c t-c p-v-10'><Link className='c-9 fs-14' to='/chinaexpressair/author'>查看全部 ></Link></div>
+        <div className='bg-e br-6 b-c ta-c p-v-10'><Link className='c-9 fs-14' to='/chinaexpressair/author'>查看全部 ></Link></div>
       </div>
     )
   }

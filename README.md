@@ -1,13 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### todo
-1、组件统一管理<br />
+1、路由动画<br />
 2、全局loading<br />
-3、引入lodash<br />
+3、引入富文本编辑器<br />
 4、引入存储加密<br />
 5、引入操作确认框<br />
-6、路由动画<br />
-7、引入富文本编辑器<br />
+6、头像上传<br />
 
 ## Available Scripts
 

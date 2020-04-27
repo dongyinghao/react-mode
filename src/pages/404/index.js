@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 class pageNotFount extends React.Component {
   render() {
     return (
-      <div className='t-c p-t-200 fs-14'>
+      <div className='ta-c p-t-200 fs-14'>
         <Link className='fixed l-80 t-40' to='/'><img src="/assets/img/nav-logo.png" alt=""/></Link>
         <div className='c-red fs-68'>404!</div>
         <div className='m-v-20'>您要找的页面不存在</div>

@@ -45,7 +45,9 @@ export const dateFromate = (timestamp) => {
 };
 
 // 获取url查询参数
-export const searchToParams = (search) => { // search形如：'?name=test&age=26&sex=25'
+// 入参形如：'?name=test&age=26&sex=25'
+// 出参形如：'{name: "test", age: 26, sex: 25}'
+export const searchToParams = (search) => {
   let query = '';
   let data = {};
   if (search.indexOf('?') === 0) query = query.substring(1);
@@ -59,10 +61,21 @@ export const searchToParams = (search) => { // search形如：'?name=test&age=26
 
 // 数字分隔符(各位开始，每三位添加逗号隔开)
 // 入参形如：'1234567890.4587'
+// 出参形如：'1,234,567,890.4587'
 export const numberFormat = (num) => {
   return num.toString().replace(/\d+/, function(n){ // 先提取整数部分
     // 正则：匹配一个数字，该数字需要满足“其后面跟随3的倍数个数字至结尾”
     // 例如7891234567890可以匹配到数字(从左到右)7、1、4、7
     return n.replace(/(\d)(?=(\d{3})+$)/g, $1 => $1+",");
   })
+};
+
+// 数组分组，不改变原数组
+// 入参形如：(原数组, 分割的数组长度)
+// 出参形如：[[][]]
+export const arraySplit = (array, n) => {
+  const org = [];
+  var index = Math.ceil(array.length / n);
+  for (let i = 1; i <= index; i++) { org.push(array.slice((i - 1) * n, i * n)) }
+  return org
 };

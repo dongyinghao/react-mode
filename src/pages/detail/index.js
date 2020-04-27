@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 class Detail extends React.Component {
   render () {
     return (
-      <div className='f-auto bg-e p-b-20 p-t-72'>
+      <div className='f-auto bg-e p-b-20 p-t-72 animated slideInRight'>
         <div className='m-h-auto flex jc-b p-t-10 w-960'>
           <div className='fixed w-960 h-0 m-h-auto'>
-            <div className='absolute l--60 t-c c-9 fs-14 t-140'>
+            <div className='absolute l--60 ta-c c-9 fs-14 t-140'>
               <div className='wh-48 br-p-50 bg-f lh-48 pointer h-c-3'>
                 <i className='iconfont iconzan fs-18'/>
               </div>
@@ -58,7 +58,7 @@ class Detail extends React.Component {
                 人点赞 >
                 <span className='m-l-10 wh-32 b-c br-p-50 flex ai-c jc-c pointer'><i className='iconfont fs-16 iconcai' /></span>
               </div>
-              <div className='flex ai-c'><i className='iconfont m-r-10 va-3 pointer iconnote' /> 自嗨 <i className='iconfont iconomit m-l-10 b-c t-c fs-14 wh-32 br-p-50 pointer lh-32'/></div>
+              <div className='flex ai-c'><i className='iconfont m-r-10 va-3 pointer iconnote' /> 自嗨 <i className='iconfont iconomit m-l-10 b-c ta-c fs-14 wh-32 br-p-50 pointer lh-32'/></div>
             </div>
           </div>
           <div className='w-p-32'>

@@ -53,7 +53,7 @@ class Login extends React.Component{
       <div className="flex ai-c bg-e h-p-100 relative">
         <Link to='/' className="absolute l-80 t-40"><img src="/assets/img/nav-logo.png" alt=""/></Link>
         <div className="w-360 m-h-auto form bg-f p-h-30 p-v-40">
-          <div className="t-c fs-22 c-9">
+          <div className="ta-c fs-22 c-9">
             <NavLink className="c-9" to='/login' activeClassName='c-red'>登录</NavLink>
             <span> | </span>
             <NavLink className="c-9" to='/register' activeClassName='c-red'>注册</NavLink>

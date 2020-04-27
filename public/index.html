@@ -6,22 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Web site created using create-react-app"/>
-    <title>React App</title>
+    <title>简书</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
-  <script>
-    function numberFormat (num) { // search形如：'42354875'
-      return num.toString().replace(/\d+/, function(n){ // 先提取整数部分
-        return n.replace(/(\d)(?=(\d{3})+$)/g,function($1){
-          return $1+",";
-        });
-      })
-    }
-
-    console.log('52241758741856'.match(/(\d)(?=(\d{3})+$)/g));
-    // console.log(numberFormat(52417856.54798));
-  </script>
 </html>

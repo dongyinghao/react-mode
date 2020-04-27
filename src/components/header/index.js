@@ -35,24 +35,31 @@ class Header extends React.Component{
             <div className='p-h-16 inline-block'><span className='iconfont va-3 iconAa' /></div>
             {token ?
               <div className='p-h-16 c-6 pointer inline-block' onClick={logoutHandle}>退出</div> :
-              <React.Fragment>
+              <>
                 <Link className='p-h-16 c-6 inline-block' to='/login'>登录</Link>
                 <Link className='p-h-16 c-6 inline-block' to='/register'>注册</Link>
-              </React.Fragment>
+              </>
             }
             <Link className='c-f bg-red br-20 h-40 p-h-16 inline-block lh-40' to='/write'><i className='iconfont iconpen fs-18' />写文章</Link>
           </div>
           <div className="nav-main">
             <div className='inline-block p-h-16 c-red'>
-              <NavLink activeClassName='c-red' to='/'><i className='iconfont iconcompass va-3' />{token ? '发现' : '首页'}</NavLink>
+              <NavLink activeClassName='c-red' to='/chinaexpressair' exact><i className='iconfont iconcompass va-3 fs-22' />{token ? '发现' : '首页'}</NavLink>
             </div>
-            <div className='inline-block p-h-16 pointer'>
-              {
-                token ?
-                  <React.Fragment><i className='iconfont va-3 iconbook'/> 关注</React.Fragment> :
-                  <React.Fragment><i className='iconfont va-3 icondownload'/>下载</React.Fragment>
-              }
-            </div>
+            {
+              token ?
+                <>
+                  <div className='inline-block p-h-16 pointer'>
+                    <NavLink activeClassName='c-red' to='/chinaexpressair/focus'><i className='iconfont va-2 iconbook fs-18'/> 关注</NavLink>
+                  </div>
+                  <div className='inline-block p-h-16 pointer'>
+                    <NavLink activeClassName='c-red' to='/chinaexpressair/news'><i className='iconfont va-2 iconbell fs-18'/> 消息</NavLink>
+                  </div>
+                </> :
+                <div className='inline-block p-h-16 pointer'>
+                  <NavLink activeClassName='c-red' to='/chinaexpressair/news'><i className='iconfont va-3 icondownload fs-22'/>下载</NavLink>
+                </div>
+            }
             <div className='inline-block p-h-16'>
               <div className='bg-e p-l-16 h-30 lh-n br-15 p-t-2 relative p-r-40'>
                 <CSSTransition in={focus} timeout={600} classNames='slide'>
@@ -65,7 +72,7 @@ class Header extends React.Component{
                 </CSSTransition>
                 <i
                   onMouseDown={this.searchHandle}
-                  className={'iconfont iconsearch fs-14 t-c br-p-50 absolute wh-22 r-10 v-0 m-v-auto pointer lh-24 border-box p-l-2 ' + (focus ? 'bg-a c-f' : 'c-6')}/>
+                  className={'iconfont iconsearch fs-14 ta-c br-p-50 absolute wh-22 r-10 v-0 m-v-auto pointer lh-24 border-box p-l-2 ' + (focus ? 'bg-a c-f' : 'c-6')}/>
               </div>
             </div>
           </div>
