@@ -15,7 +15,7 @@ class SearchArticle extends React.Component {
                 <Link to=''>{ item.author }</Link>
                 <span className='c-9 m-l-10'>{ item.createDate }</span>
               </div>
-              <div className='fs-18 bold m-v-10 pointer'><Link className='h-b' to='/chinaexpressair/detail'>{ item.title }</Link></div>
+              <div className='fs-18 bold m-v-10 pointer'><Link className='h-b' to='/easybook/detail'>{ item.title }</Link></div>
               <div className='lh-p-140 fs-14 c-9'>{ item.content }</div>
               <div className='fs-14 c-9 m-t-10'>
                 <i className='iconfont iconpinglun fs-14'/> {item.commentNum}

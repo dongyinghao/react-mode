@@ -5,7 +5,7 @@ export const init = () => {
   return (dispatch) => {
     apis.user().then(({data}) => {
       const action = {
-        type: constants.DATAINIT_FOCUS,
+        type: constants.DATAINIT_USER,
         ...data
       };
       dispatch(action)

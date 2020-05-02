@@ -27,18 +27,18 @@ class App extends React.Component {
               <Route path='/register' exact component={ Register }/>
               <Route path='/login' exact component={ Login }/>
               <Route path='/write' exact render={() => this.routeTest(<Write/>, '/write')}/>
-              <Route path='/chinaexpressair' render={() => (
+              <Route path='/easybook' render={() => (
                 <Layout>
-                  <Route path='/chinaexpressair' exact component={ Home }/>
-                  <Route path='/chinaexpressair/detail/:id' exact component={ Detail }/>
-                  <Route path='/chinaexpressair/author' exact component={ Author }/>
-                  <Route path='/chinaexpressair/search' exact component={ Search }/>
-                  <Route path='/chinaexpressair/user/:id' exact component={ User }/>
-                  <Route path='/chinaexpressair/focus' exact component={ Focus }/>
-                  <Route path='/chinaexpressair/news' exact component={ News }/>
+                  <Route path='/easybook' exact component={ Home }/>
+                  <Route path='/easybook/detail/:id' exact component={ Detail }/>
+                  <Route path='/easybook/author' exact component={ Author }/>
+                  <Route path='/easybook/search' exact component={ Search }/>
+                  <Route path='/easybook/user/:id' exact component={ User }/>
+                  <Route path='/easybook/focus' component={ Focus }/>
+                  <Route path='/easybook/news' component={ News }/>
                 </Layout>
               )}/>
-              <Redirect from="/" exact to="/chinaexpressair" />
+              <Redirect from="/" exact to="/easybook" />
               <Route exact component={ PageNotFound }/>
             </Switch>
           </BrowserRouter>

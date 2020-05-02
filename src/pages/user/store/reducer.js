@@ -3,15 +3,15 @@ import { constants } from './index'
 
 const defaultState = fromJS({
   articleList: [],
-  recommendList: []
+  userInfo: {}
 });
 
 export default (state=defaultState, action) => {
   switch (action.type) {
-    case constants.DATAINIT_HOME:
+    case constants.DATAINIT_USER:
       return state.merge({
         articleList: fromJS(action.articleList),
-        recommendList: fromJS(action.recommendList)
+        userInfo: fromJS(action.userInfo)
       });
     default:
       return state

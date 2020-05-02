@@ -12,5 +12,7 @@ export default {
   // 搜索历史
   querySearchHistory: (data, config) => axios.get('searchHistory.json', data, config),
   // 搜索
-  querySearch: (data, config) => axios.get('search.json', data, config)
+  querySearch: (data, config) => axios.get('search.json', data, config),
+  // 用户中心
+  user: (data, config) => axios.get('user.json', data, config),
 };

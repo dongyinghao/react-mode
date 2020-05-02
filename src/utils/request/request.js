@@ -1,5 +1,5 @@
 import axios from './interceptors'
-import store from '../../store'
+import store from '@/store'
 
 let basicUrl = '';
 if (process.env.NODE_ENV === 'development') {

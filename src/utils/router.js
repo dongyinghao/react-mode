@@ -14,17 +14,17 @@ export default [
   { path: "/login", name: "login", exact: true, component: Login },
   { path: "/write", name: "write", exact: true, component: Write, auth: true },
   {
-    path: "/chinaexpressair",
+    path: "/easybook",
     name: "layout",
     component: Layout,
     children: [
-      { path: "/chinaexpressair", name: "home", exact: true, component: Home },
-      { path: "/chinaexpressair/detail/:id", name: "detail", exact: true, component: Detail },
-      { path: "/chinaexpressair/search", name: "search", exact: true, component: Search },
-      { path: "/chinaexpressair/author", name: "author", exact: true, component: Author },
-      { path: "/chinaexpressair/*", redirect: '/pagenotfound' },
+      { path: "/easybook", name: "home", exact: true, component: Home },
+      { path: "/easybook/detail/:id", name: "detail", exact: true, component: Detail },
+      { path: "/easybook/search", name: "search", exact: true, component: Search },
+      { path: "/easybook/author", name: "author", exact: true, component: Author },
+      { path: "/easybook/*", redirect: '/pagenotfound' },
     ]
   },
-  { path: "/", exact: true, redirect: '/chinaexpressair' },
+  { path: "/", exact: true, redirect: '/easybook' },
   { path: "/*", name: "pageNotFound", component: PageNotFound }
 ]

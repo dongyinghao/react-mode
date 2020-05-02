@@ -2,10 +2,10 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { actionCreator } from './store'
 import { IndexWrap } from "./style"
-import BackTop from '../../components/backTop'
+import BackTop from '@/components/backTop'
 import Article from './components/article.js'
 import Recommend from "./components/recommend.js";
-// import toast from "../../utils/toast";
+// import toast from "@/utils/toast";
 
 class Home extends React.Component {
   render () {
@@ -39,11 +39,9 @@ class Home extends React.Component {
     this.props.dataInit()
   }
 }
-const mapDispatch = (dispatch) => {
-  return {
+const mapDispatch = (dispatch) => ({
     dataInit () {
       dispatch(actionCreator.init())
     }
-  }
-};
+  });
 export default connect(null, mapDispatch)(Home)

@@ -1,11 +1,11 @@
 import { constants } from './index'
-import apis from '../../../utils/request/apis'
+import apis from '@/utils/request/apis'
 
 export const init = () => {
   return (dispatch) => {
-    apis.home('/api/home.json').then(({data}) => {
+    apis.home().then(({data}) => {
       const action = {
-        type: constants.DATAINIT,
+        type: constants.DATAINIT_HOME,
         ...data
       };
       dispatch(action)

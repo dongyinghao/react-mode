@@ -4,21 +4,9 @@ import { connect } from 'react-redux'
 class Comment extends React.Component {
 
   render () {
-    const { typeChangeHandle, currentType } = this.props;
     return (
-      <div>
-        {
-          this.props.list.map(item =>
-            <div onClick={() => { typeChangeHandle(item) }}
-                 key={item.id}
-                 className={ 'h-bg-e p-h-16 p-v-6 lh-32 br-6 transition ' + (String(currentType) === item.id ? 'bg-e' : '') }>
-              <span>{ item.name }</span>
-              <div className='f-l bg-a br-6 wh-32 ta-c m-r-20'>
-                <i className={'c-f iconfont fs-18 ' + item.icon}/>
-              </div>
-            </div>
-          )
-        }
+      <div className='p-b-20 fadeIn animated'>
+        <div className='b-b-e p-b-20 fs-14 bold'>收到的评论</div>
       </div>
     )
   }

@@ -11,6 +11,13 @@ export const HeaderWrap = styled.div`
   .wrap {
     min-width: 800px;
     max-width: 1600px;
+    .arrow {
+      width: 0;
+      height: 0;
+      border-top: 8px solid #999;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+    }
     .nav-main {
       max-width: 1200px;
       margin: 0 auto;

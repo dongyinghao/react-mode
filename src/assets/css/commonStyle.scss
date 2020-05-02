@@ -73,7 +73,7 @@ $p-list: 30 20 16 10 4;
 @each $key in $p-list { .p-#{$key} {padding: #{$key}px;} }
 
 // 内间距-垂直
-$p-v-list: 40 30 20 10 6 2;
+$p-v-list: 40 30 20 14 10 6 2;
 @each $key in $p-v-list { .p-v-#{$key} {padding-top: #{$key}px; padding-bottom: #{$key}px} }
 
 // 内间距-水平
@@ -116,13 +116,15 @@ $p-r-list: 40 20;
 
 // 圆角
 .br-p-50 {border-radius: 50%}
-$br-list: 40 24 20 15 6;
+$br-list: 40 30 24 20 15 6;
 @each $key in $br-list { .br-#{$key} {border-radius: #{$key}px} }
 
 // 边框
 .b-none {border: 0;}
 .b-b-e {border-bottom: 1px solid #eee;}
 .b-b-2-3 {border-bottom: 2px solid #333;}
+.b-b-2-6 {border-bottom: 2px solid #666;}
+.b-b-2-f {border-bottom: 2px solid #fff;}
 .b-t-e {border-top: 1px solid #eee;}
 .b-t-d {border-top: 1px solid #ddd;}
 .b-l-4-red {border-left: 4px solid $red;}
@@ -169,7 +171,7 @@ $h-list: 56 44 40 30;
 .f-r {float: right}
 
 // 垂直对齐
-$va-list: -7 -5 -3 -2;
+$va-list: -12 -7 -5 -3 -2 -1;
 @each $key in $va-list { .va#{$key} {vertical-align: #{$key}px} }
 .va-m {vertical-align: middle;}
 

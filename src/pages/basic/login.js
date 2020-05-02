@@ -37,7 +37,7 @@ class Login extends React.Component{
         localStorage.setItem('token', res.data.token);
         this.props.loginHandle(res.data.token);
         const fromPath = this.props.location.state && this.props.location.state.from;
-        this.props.history.push({pathname: fromPath || "/chinaexpressair", query:{ test: "test" }})
+        this.props.history.push({pathname: fromPath || "/easybook", query:{ test: "test" }})
       }
     }).catch(error => {
       this.setState({disabled: false});
@@ -49,7 +49,7 @@ class Login extends React.Component{
     const { user, password, disabled } = this.state;
     return (
       this.props.token ?
-      <Redirect to='/chinaexpressair' />  :
+      <Redirect to='/easybook' />  :
       <div className="flex ai-c bg-e h-p-100 relative">
         <Link to='/' className="absolute l-80 t-40"><img src="/assets/img/nav-logo.png" alt=""/></Link>
         <div className="w-360 m-h-auto form bg-f p-h-30 p-v-40">
