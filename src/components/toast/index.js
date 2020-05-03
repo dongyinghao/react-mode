@@ -28,8 +28,7 @@ class Notification extends React.Component {
     const div = document.createElement('div');
     div.setAttribute('id', 'toast');
     document.body.appendChild(div);
-    const _this = ReactDOM.render(<Notification/>, div);
-    _this.setState({content});
+    ReactDOM.render(<Notification ref={container => container && container.setState({content})}/>, div);
   };
 
   componentDidMount() {

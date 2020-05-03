@@ -33,7 +33,7 @@ class Recommend extends React.Component {
               <div className='flex ai-c m-b-20' key={item.get('id')}>
                 <img className='m-r-10 br-p-50 wh-48' src={item.get('userUrl')} alt=""/>
                 <div className='fs-15 f-auto'>
-                  <div className='fs-14'><span>{item.get('nickname')}</span><span className='c-green f-r pointer'>+关注</span></div>
+                  <div className='fs-14'><Link to='/easybook/user/1'>{item.get('nickname')}</Link><span className='c-green f-r pointer'>+关注</span></div>
                   <div className='m-t-6 fs-12 c-9'>写了{ item.get('textNum')} 个字 喜欢 { item.get('likeNum')}</div>
                 </div>
               </div>

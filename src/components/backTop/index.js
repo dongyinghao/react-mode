@@ -15,7 +15,6 @@ class BackTop extends React.Component{
 
   scrollHandle = () => {
     let top = document.documentElement.scrollTop;
-    console.log(top);
     this.setState({show: top > 500})
   };
 

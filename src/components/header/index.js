@@ -36,7 +36,7 @@ class Header extends React.Component{
             </NavLink>
           </div>
           <div className='f-r'>
-            <div className='p-h-16 inline-block'><span className='iconfont va-3 iconAa' /></div>
+            <div className='p-h-16 inline-block'><span className='iconfont va-3 iconAa fs-22' /></div>
             {token ?
               <>
                 <div className='p-h-16 c-6 pointer inline-block' onClick={logoutHandle}>退出</div>

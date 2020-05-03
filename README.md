@@ -2,11 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### todo
 1、路由动画<br />
-2、全局loading<br />
+2、头像上传<br />
 3、引入富文本编辑器<br />
 4、引入存储加密<br />
 5、引入操作确认框<br />
-6、头像上传<br />
+6、
 
 ## Available Scripts
 

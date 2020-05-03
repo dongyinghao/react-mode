@@ -6,9 +6,11 @@ import BackTop from '@/components/backTop'
 import Article from './components/article.js'
 import Recommend from "./components/recommend.js";
 // import toast from "@/utils/toast";
+// import loading from "@/utils/loading";
 
 class Home extends React.Component {
   render () {
+    // todo 为什么渲染了两次
     return (
       <IndexWrap className='f-auto m-h-auto p-t-92'>
         <BackTop />
@@ -36,6 +38,13 @@ class Home extends React.Component {
     )
   }
   componentDidMount () {
+    // loading.show();
+    // // toast.show();
+    // setTimeout(() => {
+    //   this.forceUpdate(()=> {
+    //     console.log(44);
+    //   });
+    // }, 1000);
     this.props.dataInit()
   }
 }

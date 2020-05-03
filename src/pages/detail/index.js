@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 class Detail extends React.Component {
   render () {
     return (
-      <div className='f-auto bg-e p-b-20 p-t-72 animated slideInRight'>
+      <div className='f-auto bg-e p-b-20 p-t-72'>
         <div className='m-h-auto flex jc-b p-t-10 w-960'>
           <div className='fixed w-960 h-0 m-h-auto'>
             <div className='absolute l--60 ta-c c-9 fs-14 t-140'>
